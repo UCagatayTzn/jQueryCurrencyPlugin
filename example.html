@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="css/kurlar.css">
+          <style>
+          html { height:100vh;}
+          body {background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);}
+          .container { margin:150px auto;}
+          </style>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="currency-exchange-list.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.forex-ticker').getCurrencyExchangeRates();
+});
+    </script>
+    </head>
+    <body>
+      <div class="forex-ticker">
+          <table id="table">
+              <tr id="eur-usd-click"> 
+                  <td class="currency-pair">
+                      EUR/USD
+                  </td>
+                  <td class="price" data-currency-pair="USDJPY">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="eur-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+              <!--  -->
+              <tr id="eur-usd-shown-hidden" class="shown-hidden">
+                <td class="currency-pair">
+                </td>
+                <td class="price" data-currency-pair="USDJPY">
+                    <div class="top">
+    
+                    </div>
+                    <div class="bottom">
+                        <span id="" class="first"></span><span class="last"></span>
+                    </div>
+                </td>
+            </tr>
+            <!--  -->
+              <tr id="try-usd-click">
+                  <td class="currency-pair" >
+                      TRY/USD
+                  </td>
+                  <td class="price" data-currency-pair="USDJPY">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="try-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                            <!--  -->
+              <tr id="try-usd-shown-hidden" class="shown-hidden">
+              <td class="currency-pair">
+             </td>
+             <td class="price" data-currency-pair="USDJPY">
+             <div class="top">
+                    
+            </div>
+            <div class="bottom">
+            <span id="" class="first"></span><span class="last"></span>
+            </div>
+            </td>
+            </tr>
+                            <!--  -->
+              <tr id="gbp-usd-click">
+                  <td class="currency-pair">
+                      GBP/USD
+                  </td>
+                  <td class="price" data-currency-pair="GBPUSD">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="gbp-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="gbp-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+              <tr id="btc-usd-click">
+                  <td class="currency-pair">
+                      BTC/USD
+                  </td>
+                  <td class="price" data-currency-pair="USDCHF">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="btc-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="btc-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+              <tr id="aud-usd-click">
+                  <td class="currency-pair">
+                      AUD/USD
+                  </td>
+                  <td class="price" data-currency-pair="AUDJPY">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="aud-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="aud-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+              <tr id="jpy-usd-click">
+                  <td class="currency-pair">
+                      JPY/USD
+                  </td>
+                  <td class="price" data-currency-pair="EURJPY">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="jpy-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="jpy-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+              <tr id="aed-usd-click">
+                  <td class="currency-pair">
+                     AED/USD
+                  </td>
+                  <td class="price" data-currency-pair="GBPAUD">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="aed-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="aed-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+      
+              <tr id="nzd-usd-click">
+                  <td class="currency-pair">
+                      NZD/USD
+                  </td>
+                  <td class="price" data-currency-pair="EURNZD">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="nzd-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="nzd-usd-shown-hidden" class="shown-hidden">
+                                            <td class="currency-pair">
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+      
+              <tr id="chf-usd-click">
+                  <td class="currency-pair">
+                      CHF/USD
+                  </td>
+                  <td class="price" data-currency-pair="GBPCHF">
+                      <div class="top">
+      
+                      </div>
+                      <div class="bottom">
+                          <span id="chf-usd" class="first"></span><span class="last"></span>
+                      </div>
+                  </td>
+              </tr>
+                                          <!--  -->
+                                          <tr id="chf-usd-shown-hidden" class="shown-hidden">
+                                              
+                                            <td class="currency-pair">
+                                                    Para Birimi<br><br><br><br><br><br>
+                                           </td>
+                                           <td class="price" data-currency-pair="USDJPY">
+                                           <div class="top">
+                                                  
+                                          </div>
+                                          <div class="bottom">
+                                          <span id="" class="first"></span><span class="last"></span>
+                                          </div>
+                                          </td>
+                                          </tr>
+                                                          <!--  -->
+      
+      
+          </table>
+              <!-- HIDDEN / POP-UP DIV -->
+    <div id="pop-up1" class="pop-up">
+        <p>
+            2017 Aralık Kapanış Değeri: 0.844679
+        </p>
+    </div>
+      <div id="pop-up2" class="pop-up">
+            <p>
+                    2017 Aralık Kapanış Değeri: 3.843316
+            </p>
+          </div>
+      
+      <div id="pop-up3" class="pop-up">
+            <p>
+                    2017 Aralık Kapanış Değeri: 0.745953
+            </p>
+          </div>
+      <div id="pop-up4" class="pop-up">
+            <p>
+                    2017 Aralık Kapanış Değeri: 0.000076
+            </p>
+          </div>
+          <div id="pop-up5" class="pop-up">
+                <p>
+                        2017 Aralık Kapanış Değeri: 1.308155
+                </p>
+              </div>
+      <div id="pop-up6" class="pop-up">
+            <p>
+                    2017 Aralık Kapanış Değeri: 112.929634
+            </p>
+          </div>
+  <div id="pop-up7" class="pop-up">
+        <p>
+                2017 Aralık Kapanış Değeri: 3.672547
+        </p>
+      </div>
+<div id="pop-up8" class="pop-up">
+        <p>
+                2017 Aralık Kapanış Değeri: 1.437082
+        </p>
+      </div>
+      <div id="pop-up9" class="pop-up">
+            <p>
+                    2017 Aralık Kapanış Değeri: 0.986718
+            </p>
+          </div>
+</div>
+      </body>
+</html>
